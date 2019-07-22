@@ -110,7 +110,8 @@ public class MainActivity extends AppCompatActivity {
         public View getView(int position, View convertView, ViewGroup parent) {
             if(convertView==null){
                 convertView= LayoutInflater.from(parent.getContext()).inflate(R.layout.item,parent,false);
-                convertView.setTag(new ViewHolder((TextView)convertView.findViewById(R.id.textItem)));
+               convertView.setTag(new ViewHolder((TextView)convertView.findViewById(R.id.textItem)));
+
             }
             ViewHolder holder= (ViewHolder) convertView.getTag();
             final String item = getItem(position);
